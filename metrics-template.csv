@@ -1,0 +1,20 @@
+Category,Metric Key,Display Name,Description,Calculation,Frequency,Owner,Target,Current Value,Data Source,Notes
+Users,WAU,Weekly Active Users,Number of unique users active in the last 7 days,Count unique user_id with activity in last 7 days,Weekly,Founder/Product,, ,Analytics,
+Users,NewUsers,New Users (this week),Number of new signups in the week,Count of new user accounts created in the week,Weekly,Founder/Product,, ,Analytics,
+Activation,ActivationRate,Activation Rate,Share of new users who reach "time-to-first-value" within 7 days,Activated users / New users * 100,Weekly,Founder/Product,>20%, ,Analytics,Define "activation" event clearly
+Retention,Retention7d,7-day Retention,Share of users still active 7 days after signup,Users active on day 7 / cohort size *100,Weekly,Founder/Product,, ,Analytics,Cohort-based
+Product,CoreFeatureAdoption,Core Feature Adoption,Share of active users using the core feature in the past week,Users using core feature / WAU *100,Weekly,Founder/Product,, ,Analytics,
+Revenue,MRR,Monthly Recurring Revenue,Sum of recurring revenue for the month (USD),Sum of recurring subscription revenue,Monthly,Founder/Product/Finance,, ,Stripe/Payments,
+Revenue,NewMRR,New MRR (this month),New recurring revenue added this month,Sum of new subscription MRR added this month,Monthly,Founder/Product,, ,Stripe/Payments,
+Revenue,ChurnedMRR,Churned MRR (this month),MRR lost from cancellations this month,Sum of lost MRR due to cancellations/ downgrades,Monthly,Founder/Product,, ,Stripe/Payments,
+Conversion,TrialToPaid,Trial-to-Paid Conversion,Share of trial users converting to paid,Trials converted to paid / trials started *100,Monthly,Founder/Product,>10%, ,Analytics/Payments,
+Leads,DemoCalls,Demo Calls Booked,Number of demo/qualification calls booked in the week,Count of booked demo calls,Weekly,Founder/Product,, ,CRM/Calendar,
+Growth,OrganicSignups,Organic Signups,Number of signups without paid acquisition,Count of signups with organic source,Weekly,Founder/Product,, ,Analytics,
+Growth,ReferralRate,Referral Rate,Share of new signups attributed to referrals,Referred signups / new signups *100,Weekly,Founder/Product,, ,Analytics,
+Cost,CAC,Customer Acquisition Cost,Average cost to acquire a customer,Total acquisition spend / number of new customers,Monthly,Founder/Product,, ,Advertising/Finance,
+Lifetime,LTV,Customer Lifetime Value,Average revenue per customer over expected lifetime,ARPU * average lifetime (months) or formula best suited,Monthly,Founder/Product,, ,Finance,
+Health,BugBacklog,Bug Backlog,Number of open bugs blocking users,Count of open bugs prioritized as P1/P2,Weekly,CTO/Engineering,, ,Issue Tracker,
+Health,TimeToFix,Average Time to Fix P1 Bugs,Average time from bug report to resolution for high priority bugs,Average resolution time (hours/days),Weekly,CTO/Engineering,, ,Issue Tracker,
+Health,ResponseTime,Customer Response Time,Average time to first response for support issues,Average time to first reply (hours),Weekly,CTO/Founder,, ,Support Tool,
+Delivery,OnTimeDelivery,On-time Delivery % of planned work,Share of planned tasks completed by planned date,Weekly,CTO/Founder,, ,Project Management,
+
