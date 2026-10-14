@@ -24,10 +24,6 @@ Recommended owners for a two-person startup
 - Founder / Product (Person A) — owns product, discovery, activation, retention metrics.
 - CTO / Engineering (Person B) — owns stability, delivery, time-to-fix, technical health metrics.
 
-If you'd like, I can:
-- Add a Google Sheets link and formulas
-- Add a sample dashboard (Charts) inside Google Sheets
-- Create an automated script to pull metrics from Stripe/Analytics
 
 ---
 
